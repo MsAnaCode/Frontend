@@ -1,3 +1,4 @@
+
 import avatar from '../assets/avatar.svg'
 
 
@@ -12,4 +13,3 @@ function Topbar() {
 
 
 export default Topbar;
-
