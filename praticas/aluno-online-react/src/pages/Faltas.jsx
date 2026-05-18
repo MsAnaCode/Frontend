@@ -44,7 +44,6 @@ export default function Faltas() {
               dados={faltas2025_2} 
             />
           </div>
-
         </main>
         
       </div>
