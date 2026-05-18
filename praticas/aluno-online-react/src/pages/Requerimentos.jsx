@@ -1,5 +1,6 @@
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
+import TextoDescritivo from '../components/TextoDescritivo';
 import Tabela from '../components/Tabela'; 
 
 export default function Requerimentos() {
@@ -21,12 +22,11 @@ export default function Requerimentos() {
       
       <div className="flex flex-col flex-1 p-6 md:p-10">
         
-        <Header 
-          titulo="Meus Requerimentos" 
-          descricao="Faça solicitações online para a secretaria" 
-        />
+        <Header titulo="Meus Requerimentos" />
 
         <main>
+          <TextoDescritivo texto="Faça solicitações online para a secretaria" />  
+          
           <Tabela colunas={colunasRequerimentos} dados={dadosRequerimentos} />
         </main>
         

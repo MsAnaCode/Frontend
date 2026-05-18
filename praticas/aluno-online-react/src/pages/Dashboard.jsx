@@ -1,8 +1,11 @@
+// src/pages/Dashboard.jsx
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
+import TextoDescritivo from '../components/TextoDescritivo';
 import CardLista from '../components/CardLista';
 
 export default function Dashboard() {
+  
   
   const dadosAvisos = [
     "Inscrição para o projeto de extensão",
@@ -27,12 +30,11 @@ export default function Dashboard() {
       <Sidebar paginaAtual="Dashboard" />
       
       <div className="flex flex-col flex-1 p-6 md:p-10">
-        <Header 
-          titulo="Olá, Aluno!" 
-          descricao="Bem-vindo ao portal do aluno" 
-        />
+        <Header titulo="Olá, Aluno!" />
         
         <main>
+          <TextoDescritivo texto="Bem-vindo ao portal do aluno" />
+          
           <section className="flex flex-col gap-4 mt-6">
             <CardLista titulo="Mural de Avisos" itens={dadosAvisos} />
             <CardLista titulo="Calendário Acadêmico" itens={dadosCalendario} />

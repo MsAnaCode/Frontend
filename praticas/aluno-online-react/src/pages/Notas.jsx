@@ -1,5 +1,6 @@
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
+import TextoDescritivo from '../components/TextoDescritivo';
 import Tabela from '../components/Tabela'; 
 
 export default function Notas() {
@@ -31,12 +32,11 @@ export default function Notas() {
       
       <div className="flex flex-col flex-1 p-6 md:p-10">
         
-        <Header 
-          titulo="Minhas Notas" 
-          descricao="Boletim Acadêmico" 
-        />
+        <Header titulo="Minhas Notas" />
 
         <main>
+          <TextoDescritivo texto="Boletim Acadêmico" />
+          
           <div className="flex flex-col gap-6">
             <Tabela 
               titulo="2026.1" 
@@ -54,6 +54,7 @@ export default function Notas() {
               dados={notas2025_1} 
             />
           </div>
+
         </main>
         
       </div>
