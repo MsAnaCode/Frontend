@@ -44,10 +44,17 @@ export default function Faltas() {
               dados={faltas2025_2} 
             />
           </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 281a770e1821c02ed5fa01d0be7056ce8394c78c
         </main>
         
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 281a770e1821c02ed5fa01d0be7056ce8394c78c
