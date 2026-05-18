@@ -1,3 +1,5 @@
+// src/pages/Faltas.jsx
+import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import TextoDescritivo from '../components/TextoDescritivo';
 import Tabela from '../components/Tabela';
@@ -20,6 +22,7 @@ export default function Faltas() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-[#FFFFFF] font-sans">
+      <Sidebar paginaAtual="Faltas" />
       
       <div className="flex flex-col flex-1 p-6 md:p-10">
         
@@ -41,7 +44,6 @@ export default function Faltas() {
               dados={faltas2025_2} 
             />
           </div>
-
         </main>
         
       </div>

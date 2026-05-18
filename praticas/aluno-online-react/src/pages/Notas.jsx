@@ -1,3 +1,4 @@
+import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import TextoDescritivo from '../components/TextoDescritivo';
 import Tabela from '../components/Tabela'; 
@@ -26,7 +27,9 @@ export default function Notas() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-[#FFFFFF] font-sans">
-            
+      
+      <Sidebar paginaAtual="Notas" />
+      
       <div className="flex flex-col flex-1 p-6 md:p-10">
         
         <Header titulo="Minhas Notas" />
@@ -51,7 +54,6 @@ export default function Notas() {
               dados={notas2025_1} 
             />
           </div>
-
         </main>
         
       </div>
