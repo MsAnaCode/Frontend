@@ -1,3 +1,4 @@
+<<<<<<< feature/pratica07
 import { NavLink } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -5,6 +6,11 @@ export default function Sidebar() {
 
   const { logout } = useAuth();
 
+=======
+import { NavLink } from 'react-router';
+
+export default function Sidebar() {
+>>>>>>> develop
   const navLinkClass = ({ isActive }) => {
     const classesBase = "flex items-center gap-2 px-4 py-2 rounded-md transition-colors font-medium ";
 
@@ -49,6 +55,7 @@ export default function Sidebar() {
           </li>
         </ul>
       </nav>
+<<<<<<< feature/pratica07
 
       <div className="mt-auto pt-4 border-t border-gray-300">
         <button 
@@ -58,6 +65,8 @@ export default function Sidebar() {
           Sair
         </button>
       </div>
+=======
+>>>>>>> develop
       
     </aside>
   );

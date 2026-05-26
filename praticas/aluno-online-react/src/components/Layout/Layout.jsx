@@ -1,4 +1,8 @@
+<<<<<<< feature/pratica07
 import { Outlet } from 'react-router-dom';
+=======
+import { Outlet } from 'react-router';
+>>>>>>> develop
 import Sidebar from '../Sidebar/Sidebar';
 
 function Layout() {
