@@ -1,9 +1,10 @@
+
 import Header from '../components/Header';
 import TextoDescritivo from '../components/TextoDescritivo';
 import Tabela from '../components/Tabela';
 
 export default function Boletos() {
-  
+
   const colunasBoletos = ["Vencimento", "Valor R$", "Situação"];
 
   const dadosBoletos = [
@@ -28,13 +29,13 @@ export default function Boletos() {
       
       <div className="flex flex-col flex-1 p-6 md:p-10">
         <Header titulo="Meus Boletos" />
-        
+
         <main>
           <TextoDescritivo texto="Histórico de Pagamentos" />
-          
+
           <Tabela colunas={colunasBoletos} dados={dadosBoletos} />
         </main>
-        
+
       </div>
     </div>
   );

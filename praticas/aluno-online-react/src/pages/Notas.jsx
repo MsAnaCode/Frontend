@@ -1,9 +1,10 @@
+import Sidebar from '../components/Sidebar/Sidebar';
 import Header from '../components/Header';
 import TextoDescritivo from '../components/TextoDescritivo';
-import Tabela from '../components/Tabela'; 
+import Tabela from '../components/Tabela';
 
 export default function Notas() {
-  
+
   const colunasNotas = ["Disciplina", "A1", "A2", "A3", "Menção"];
 
   const notas2026_1 = [
@@ -26,34 +27,36 @@ export default function Notas() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-[#FFFFFF] font-sans">
-            
+
+      <Sidebar paginaAtual="Notas" />
+
       <div className="flex flex-col flex-1 p-6 md:p-10">
-        
+
         <Header titulo="Minhas Notas" />
 
         <main>
           <TextoDescritivo texto="Boletim Acadêmico" />
-          
+
           <div className="flex flex-col gap-6">
-            <Tabela 
-              titulo="2026.1" 
-              colunas={colunasNotas} 
-              dados={notas2026_1} 
+            <Tabela
+              titulo="2026.1"
+              colunas={colunasNotas}
+              dados={notas2026_1}
             />
-            <Tabela 
-              titulo="2025.2" 
-              colunas={colunasNotas} 
-              dados={notas2025_2} 
+            <Tabela
+              titulo="2025.2"
+              colunas={colunasNotas}
+              dados={notas2025_2}
             />
-            <Tabela 
-              titulo="2025.1" 
-              colunas={colunasNotas} 
-              dados={notas2025_1} 
+            <Tabela
+              titulo="2025.1"
+              colunas={colunasNotas}
+              dados={notas2025_1}
             />
           </div>
 
         </main>
-        
+
       </div>
     </div>
   );
